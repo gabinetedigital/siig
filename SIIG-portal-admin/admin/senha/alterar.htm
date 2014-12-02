@@ -1,0 +1,50 @@
+		
+    <!-- START BLOCK : css -->
+    <link href="../css/restrito.css" type="text/css" rel="stylesheet" />
+    <!-- END BLOCK : css -->
+    
+    <!-- START BLOCK : form -->
+    <h1>Cadastro ou Alteração de Senha</h1>
+    <h2>&raquo; para Profissional ou Empresa</h2>
+    <br />
+    
+    <div style="width:600px;">
+		<form action="alterar-exec.php" method="post">
+            <span class="textoazul">NOVA Senha</span> (mínimo 6 dígitos)<br />
+            <input type="password" name="sen1" size="30" />
+            <br /><br />
+            <span class="textoazul">Repita a Senha</span> (igual ao informado acima)<br />
+            <input type="password" name="sen2" size="30" />
+            <br /><br />
+            <input type="hidden" name="cha" value="{cha}" />
+            <input type="hidden" name="tip" value="{tip}" />
+            <input type="hidden" name="ins" value="{ins}" />
+            <input type="submit" name="sub" value="CADASTRAR SENHA para o Acesso Restrito" />
+        </form>
+    </div>
+    <!-- END BLOCK : form -->
+    
+    
+    
+    <!-- START BLOCK : aviso -->
+    <h1>Chave de Alteração de Senha INVÁLIDA</h1>
+    <div style="width:600px;">
+		Verificamos em nosso sistema que chave de cadastro/alteração de senha enviada
+        para o seu e-mail através do link do qual você chegou até aqui, já foi utilizada
+        e não está mais permitindo que você conclua essa solicitação.
+        
+        <br /><br />
+        Faça novamente a solicitação pelo link abaixo para receber outro e-mail com uma
+        nova chave de acesso.
+        <br />
+        
+        <a href="https://crfrs.org.br/restrito/senha/">Cadastrar ou Alterar Senha de Acesso</a>
+        <br /><br />
+        
+        Desde já, agradecemos a compreensão. <br />
+        Conselho Regional de Farmácia do RS - Setor de TI
+    </div>
+    <!-- END BLOCK : aviso -->
+    
+    <br /><br />
+    <span style="color:#FF0000;">{msg}</span>

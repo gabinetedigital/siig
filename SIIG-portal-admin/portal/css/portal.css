@@ -1,0 +1,259 @@
+/* para todas as tags... serve tipo pra inicialização */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Cabin Condensed", Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	color: #000000;
+}
+
+
+
+
+/* --------------------- */
+#content{
+	width: 940px;
+	margin: auto;
+	/*background-color: #CC9;*/
+}
+/* --------------------- */
+
+
+/* ORGANIZAÇÃO DO LAYOUT */
+#all{
+	width: 100%;
+}
+
+
+
+#top{
+	height: 30px;
+	padding-top: 10px;
+	background-image: url(../img/top-bg.png);
+	background-repeat: repeat-x;
+	font-size: 10px;
+}
+
+
+
+#header{
+	height: 140px;
+	background-color: #2ab3d0;
+	background-repeat: repeat-x;
+}
+#header #logo{
+	height: 140px;
+	float: left;
+}
+/************************/
+
+
+#main{
+	margin-top: 20px;
+	background-color: #FFF;
+	margin-bottom: 25px;
+}
+
+
+
+#page{
+	width: 620px;
+	margin-left: 340px;
+}
+
+	#page a{
+		color: #036;
+		text-decoration: none;
+	}
+	/*#page a:hover{
+		background-color: #036;
+		color: #FFF;
+	}*/
+
+	
+	
+#footer{
+	height: 140px;
+	margin-top: 50px;
+	padding-top: 20px;
+	background-color: #2ab3d0;
+	color: #FFF;
+	bottom: 5px;
+	visibility: visible;
+}
+
+
+
+/* CLASSES PARA TAGS */
+.banner{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #CCC;
+	padding: 5px;
+}
+.clear{
+	clear: both;
+}
+.title{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.profs{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	width: 120px;
+}
+.restrictinput{
+	width: 220px;
+}
+.restrictsubmit{
+	background-color: #FFCC00;
+}
+.searchinput{
+	width: 242px;
+	color: #999;
+	float: left;
+}
+.searchsubmit{
+	background-color: #EEEEEE;
+}
+.searchimage{
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+	margin-top: -2px;
+}
+.xtraline{
+	width: 100%;
+	height: 3px;
+	border-width: 0px;
+	background-color: #009999;
+	margin-bottom: 10px;
+}
+.xtraline2{
+	width: 100%;
+	height: 3px;
+	border-width: 0px;
+	background-color: #009999;
+	display: block;
+	clear: both;
+}
+.listatb{
+	border-width: 1px;
+	border-style: solid;
+}
+.listatd{
+	height: 20px;
+	padding: 5px;
+	margin: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+.listatr{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+
+/* OUTRAS TAGS DO HTML */
+html{
+	overflow: -moz-scrollbars-vertical; 
+	overflow-y: scroll;
+}
+body{
+	background-color: #FFFFFF;
+}
+
+h1{
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	color: #036;
+}
+h1.restrict{
+	font-size: 16px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #FFCC00;
+}
+
+h2{
+	font-size: 16px;
+	font-weight: 700;
+	padding-left: 12px;
+	margin-bottom: 10px;
+	color: #036;
+	background-image: url(../img/title-seta.png);
+	background-repeat: no-repeat;
+}
+
+h3{
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 2px;
+	color: #099;
+}
+
+p{
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+input, select, textarea{
+	padding: 4px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #999;
+}
+
+#page ol{ 
+	margin-left: 20px;
+}
+#page ul{ 
+	margin-left: 20px;
+}
+#page li{ 
+	margin-left: 20px;
+}
+
+
+/* classes SIIG Roberto */
+
+.inputCadastrar{
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 18px;
+	padding: 8px;
+	width: 680px;
+	margin: 5px 0 20px 0;
+	resize: none;
+}
+
+.confirmar{
+	padding: 10px 35px;
+	background: #00B200;
+	font-size: 18px;
+	border: none;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.selectCategoria {
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 16px;
+	padding: 2px 6px;
+	margin: 5px 0 20px 0;
+}
+
+.textarea_medio {
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 16px;
+	padding: 8px;
+	width: 680px;
+	height: 200px;
+	margin: 5px 0 20px 0;
+	resize: none;
+}

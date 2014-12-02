@@ -1,0 +1,18 @@
+<h1>Subcategorias | Editar</h1><br/>
+<form action="subcategorias-exec.php" method="post" onsubmit="return true;">
+	<span class="textoazul">Nome</span><br />
+	<input type="text" name="nome" class="inputCadastrar" value="{nome}"/>
+	<span class="textoazul">Categoria</span><br />
+	<span style="color: red;">Se deseja manter a mesma informa&ccedil;&atilde;o, mantenha a primeira op&ccedil;&atilde;o</span><br />		
+	<span class="textoazul">Categoria atual: <span style="color: red;">{cidade}</span></span><br />
+	<select name="categoria" id="button" class="selectCategoria">
+		<option>--</option>	
+		<!-- START BLOCK : categoria -->	
+			{categorias}	
+		<!-- END BLOCK : categoria -->
+	</select><br/>
+	<input type="submit" name="sub" value="Atualizar" class="confirmar" />
+	<font color="#FF0000">{msg}</font>
+	<input type="hidden" name="act" value="subcategoria_editar" />
+	<input type="hidden" name="id" value="{id}" />
+</form> 

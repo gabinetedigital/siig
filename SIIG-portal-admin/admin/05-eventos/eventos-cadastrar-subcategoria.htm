@@ -1,0 +1,19 @@
+<h1>Eventos | Cadastrar</h1><br/>
+
+<p>Cidade: {nomecidade}</p>
+<p>Categoria: {nomecategoria}</p>
+<form action="eventos-cadastrar.php" method="post" onsubmit="return true;">
+
+	<span class="textoazul">Subcategoria</span><br/>
+	<span style="color: red;">Se o evento n&atilde;o pertencer a nenhuma subcategoria, mantenha a primeira op&ccedil;&atilde;o selecionada e clique em pr&oacute;ximo</span><br />	
+	<select name="subcategoria" id="button" class="selectCategoria">	
+		<option value=''>--</option>	
+		<!-- START BLOCK : subcategoria -->	
+		<option value="{idctg}">{ctg}</option>
+		<!-- END BLOCK : subcategoria -->
+	</select><br/>
+
+
+	<input type="submit" name="sub" value="Pr&oacute;ximo" class="confirmar" />
+	<font color="#FF0000">{msg}</font>
+</form> 

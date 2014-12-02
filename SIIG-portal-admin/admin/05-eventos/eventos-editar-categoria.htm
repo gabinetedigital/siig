@@ -1,0 +1,17 @@
+<h1>Eventos | Editar</h1><br/>
+<p>Cidade: {cidade}</p>
+<form action="eventos-editar-subcategoria.php?ide={idevento}" method="post" onsubmit="return true;">
+
+	<span class="textoazul">Categoria</span><br />	
+	<span style="color: red;">Se deseja manter a mesma informa&ccedil;&atilde;o, escolha a mesma categoria</span><br />	
+	<span class="textoazul">Categoria atual: <span style="color: red;">{categoriaatual}</span></span><br />
+	<select name="categoria" id="button" class="selectCategoria">	
+		<!-- START BLOCK : categoria -->	
+		<option value="{idcategoria}">{nomecategoria}</option>
+		<!-- END BLOCK : categoria -->
+	</select><br/>
+
+
+	<input type="submit" name="sub" value="Pr&oacute;ximo" class="confirmar" />
+	<font color="#FF0000">{msg}</font>
+</form> 

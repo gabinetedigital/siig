@@ -1,0 +1,37 @@
+		
+    <!-- START BLOCK : css -->
+    <link href="../css/restrito.css" type="text/css" rel="stylesheet" />
+    <!-- END BLOCK : css -->
+    
+    <h1>Solicitação de Senha para Profissional</h1>
+    <div style="width:600px;">
+	<form action="senha2-exec.php" method="post">
+    	<input type="hidden" name="tip" value="pf"  />
+    	<span class="textoazul">CPF</span> (somente números)<br />
+        <input type="text" name="nro" size="30" maxlength="11" onkeypress="mascara(this, soNumeros);" />
+        <input type="submit" name="sub" value="Solicitar Senha para Profissional" />
+    </form> 
+    </div>
+    
+    <br /><br />
+    
+    <h1>Solicitação de Senha para Empresa</h1>
+    <div style="width:600px;">
+    <form action="senha2-exec.php" method="post">
+    	<input type="hidden" name="tip" value="pj" />
+        <span class="textoazul">CNPJ</span> (somente números)<br />
+        <input type="text" name="nro" size="30" maxlength="15" onkeypress="mascara(this, soNumeros);" />
+        <input type="submit" name="sub" value="Solicitar Senha para Empresa" />
+    </form> 
+    </div>
+    
+    <br /><br />
+    
+    <p><img src="../img/highlights-line.png" width="620" height="2" /></p>
+    
+    <span style="color:#FF0000;">{msg}</span> <br />
+    
+    <br />
+    
+    <h2>Já tenho a senha de acesso. <a href="../login/">Quero fazer o login</a></h2>
+    

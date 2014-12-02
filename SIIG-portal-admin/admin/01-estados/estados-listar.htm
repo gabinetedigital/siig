@@ -1,0 +1,18 @@
+<h1>Estados | Listar</h1><br/>
+<!--<a href="produtos_cadastrar.php" class="cadastrar" style="float: right;">+ Cadatrar Estado</a>-->
+<span style="color: red;">{msg}</span>
+<p style="margin-left: 15px;"><b>Sigla | Nome</b></p>			
+<hr color="#DDDDDD" style="margin-bottom: 10px;">
+
+<!-- START BLOCK : estado -->
+<div style="border-bottom: 1px solid #DDD; margin-bottom: 10px; padding: 5px 15px;" onmouseover="this.style.background='#f0f0f0';" onmouseout="this.style.background='#fff';">
+	<p style="margin-bottom: 4px;"><span style="color: #3AC1EA;">{sigla} | {nome}</span></p> 
+	<a href="estados-editar.php?ide={id}" class="link" title="Editar"><img src="../img/b_edit.png" alt="Editar" border="0" align="absmiddle" /></a> :: 
+	<a href="javascript:;" onclick="excluirEstado({id}, 'estado_excluir')" class="link" title="Excluir"><img src="../img/b_drop.png" alt="Excluir" border="0" align="absmiddle" /></a> :: 
+	{ativo}
+</div>
+<!-- END BLOCK : estado -->
+
+<!-- START BLOCK : noestado -->
+Não existe nenhuma estado cadastrado. 
+<!-- END BLOCK : noestado -->

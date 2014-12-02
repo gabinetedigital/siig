@@ -1,0 +1,17 @@
+<h1>Eventos | Cadastrar</h1><br/>
+
+<p>Cidade: {nomecidade}</p>
+<form action="eventos-cadastrar-subcategoria.php" method="post" onsubmit="return true;">
+
+	<span class="textoazul">Categoria</span><br/>	
+	<select name="categoria" id="button" class="selectCategoria">	
+		<option  value="">--</option>	
+		<!-- START BLOCK : categoria -->	
+		<option value="{idctg}">{ctg}</option>
+		<!-- END BLOCK : categoria -->
+	</select><br/>
+
+
+	<input type="submit" name="sub" value="Pr&oacute;ximo" class="confirmar" />
+	<font color="#FF0000">{msg}</font>
+</form> 

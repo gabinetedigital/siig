@@ -1,0 +1,68 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+		<link rel="stylesheet" type="text/css" href="../css/leaflet.css" />
+		<link rel="stylesheet" type="text/css" href="../css/maps.css">
+
+		 <link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,500italic,400' rel='stylesheet' type='text/css' />
+		
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+		<script type='text/javascript' src='http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js?2'></script>
+		
+		<title>SIIG - Sistema Integrado de Informa&ccedil;&otilde;es Georeferenciadas</title>
+
+		<script type="text/javascript">
+			function limparPadrao(campo) {
+				if (campo.value == campo.defaultValue) {
+					campo.value = "";
+				}
+			}
+
+			function escreverPadrao(campo) {
+				if (campo.value == "") {
+					campo.value = campo.defaultValue;
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="all" class="all">
+
+			<div id="content">
+				<a href="../../"><img src="../img/logo-map-siig.png" alt="SIIG - SISTEMA INTEGRADO DE INFORMAÇÕES GEORREFERENCIADAS" border="0"  style="margin-bottom: 20px;"/></a><br/><br/>
+				<form action="map.php" method="GET"> 
+					<select name="cid"  class="selectCidade">
+						<option value="" class="selectOption">Escolha a cidade</option>
+						<!-- START BLOCK : cidade -->
+						<option value="{nome}" {sel} class="selectOption" style="width: 18px;height: 18px;">{nome}</option>
+						<!-- END BLOCK : cidade -->
+					</select><br/><br/>	
+					<select name="cat"  class="selectCidade">
+						<option value="" class="selectOption">Escolha a categoria</option>
+						<!-- START BLOCK : categoria -->
+						<option value="{nome}" {sel} class="selectOption" style="width: 18px;height: 18px;">{nome}</option>
+						<!-- END BLOCK : categoria -->
+					</select><br/><br/>	
+					<input type="text" name="txt" onfocus="limparPadrao(this);" onblur="escreverPadrao(this);" class="inputBusca" />				
+					<!--<input type="text" name="txt" value="Buscar" onfocus="limparPadrao(this);" onblur="escreverPadrao(this);" class="inputBusca" />-->
+					<br/><br/>
+					<button type="submit" class="submit">ENVIAR</button>
+					<div class="clear"></div>					
+				</form>
+
+			</div>
+
+
+		
+			<div id="map"></div>
+
+			<script type='text/javascript' src='../map/pontos.php?aut=c2lpZy1kZWQtM3dk&{parametro}'></script>
+			<script type='text/javascript' src='../map/leaf-demo.js'>
+				
+			</script>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>SIIG - Acesso Restrito</title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700' rel='stylesheet' type='text/css'>
+    <link href="../css/login.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="all">
+
+	<div id="top">
+    	<div id="content" align="right">
+        	<font size="10px">Acesso Restrito - &copy;2014</font>
+        </div>
+    </div>
+    
+    
+	<div id="header">
+    	<div id="content">
+        	<div id="logo">
+            	<img src="../img/siig-logo.png" alt="SIIG - SISTEMA INTEGRADO DE INFORMAÇÕES GEORREFERENCIADAS" border="0" />
+                <p style="color: #fff; margin-left: 15px;">SISTEMA INTEGRADO DE INFORMAÇÕES GEORREFERENCIADAS</p>
+            </div>
+    	</div>	
+    </div>
+    
+    
+    <div id="main">
+    	<div id="content">
+        	
+            <div id="externo">
+                <h1>Entrar</h1>              
+                <div style="width:350px;">
+                <form action="login-exec.php" method="post" onsubmit="return true;">
+                    <span class="textoazul">Login</span><br />
+                    <input type="text" name="ema" size="30" class="inputLogin" />
+                    <br />                    
+                    <span class="textoazul">Senha</span><br />
+                    <input type="Password" name="sen" size="30" class="inputLogin" />
+                    <br />                    
+                    <input type="submit" name="sub" value="Entrar" class="entrar" />
+                    <br /><br />
+                    <font color="#FF0000">{msg}</font>
+                    <input type="hidden" name="act" value="{act}" />
+                </form> 
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<h1>Eventos | Editar</h1><br/>
+
+<p>Cidade: {cidade}</p>
+<p>Categoria: {categoria}</p>
+<p>Subcategoria: {subcategoria}</p>
+<form action="eventos-exec.php" method="post" onsubmit="return true;">
+	<span class="textoazul">T&iacute;tulo</span><br />
+	<input type="text" name="titulo" value="{titulo}" class="inputCadastrar"/>
+
+	<span class="textoazul">Texto</span><br />
+	<textarea name="texto" class="textarea_medio">{texto}</textarea>
+
+	<span class="textoazul">Assunto</span><br />
+	<input type="text" name="assunto" value="{assunto}" class="inputCadastrar"/>
+
+	<span class="textoazul">Tags</span><br />
+	<input type="text" name="tags" value="{tags}" class="inputCadastrar"/>
+
+	<span class="textoazul">Latitude</span><br />
+	<input type="text" name="latitude" value="{latitude}" class="inputCadastrar"/>
+
+	<span class="textoazul">Longitude</span><br />
+	<input type="text" name="longitude" value="{longitude}" class="inputCadastrar"/>
+	
+
+
+	<input type="submit" name="sub" value="Cadastrar" class="confirmar" />
+	<font color="#FF0000">{msg}</font>
+	<input type="hidden" name="act" value="evento_editar" />
+	<input type="hidden" name="id" value="{idevento}" />
+</form> 

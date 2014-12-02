@@ -1,0 +1,17 @@
+<h1>Eventos | Editar</h1><br/>
+<form action="eventos-editar-categoria.php?ide={idevento}" method="post" onsubmit="return true;">
+
+	<span class="textoazul">Cidade</span><br />
+	<span style="color: red;">Se deseja manter a mesma informa&ccedil;&atilde;o, escolha a mesma cidade</span><br />		
+	<span class="textoazul">Cidade atual: <span style="color: red;">{cidadeatual}</span></span><br />	
+	<!--<select name="cidade" id="button" class="selectCategoria" onchange="showText('categ','eventos-exec.php?act=ajx-cat','get','idc='+this.value)">-->
+	<select name="cidade" id="button" class="selectCategoria">	
+		<!-- START BLOCK : cidade -->	
+		<option value="{idc}">{cid}</option>
+		<!-- END BLOCK : cidade -->
+	</select><br/>
+
+
+	<input type="submit" name="sub" value="Pr&oacute;ximo" class="confirmar" />
+	<font color="#FF0000">{msg}</font>
+</form> 

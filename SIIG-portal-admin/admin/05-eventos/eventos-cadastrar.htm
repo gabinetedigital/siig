@@ -1,0 +1,30 @@
+<h1>Eventos | Cadastrar</h1><br/>
+
+<p>Cidade: {nomecidade}</p>
+<p>Categoria: {nomecategoria}</p>
+<p>Subcategoria: {nomesubcategoria}</p>
+<form action="eventos-exec.php" method="post" onsubmit="return true;">
+	<span class="textoazul">T&iacute;tulo</span><br />
+	<input type="text" name="titulo" class="inputCadastrar"/>
+
+	<span class="textoazul">Texto</span><br />
+	<textarea name="texto" class="textarea_medio"></textarea>
+
+	<span class="textoazul">Assunto</span><br />
+	<input type="text" name="assunto" class="inputCadastrar"/>
+
+	<span class="textoazul">Tags</span><br />
+	<input type="text" name="tags" class="inputCadastrar"/>
+
+	<span class="textoazul">Latitude</span><br />
+	<input type="text" name="latitude" class="inputCadastrar"/>
+
+	<span class="textoazul">Longitude</span><br />
+	<input type="text" name="longitude" class="inputCadastrar"/>
+	
+
+
+	<input type="submit" name="sub" value="Cadastrar" class="confirmar" />
+	<font color="#FF0000">{msg}</font>
+	<input type="hidden" name="act" value="evento_cadastrar" />
+</form> 

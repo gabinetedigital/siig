@@ -1,0 +1,16 @@
+<h1>Subcategorias | Cadastrar</h1><br/>
+<form action="subcategorias-exec.php" method="post" onsubmit="return true;">
+	<span class="textoazul">Nome</span><br />
+	<input type="text" name="nome" class="inputCadastrar"/>
+	<span class="textoazul">Categorias</span><br />	
+	<select name="categoria" id="button" class="selectCategoria">
+		<option>--</option>	
+		<!-- START BLOCK : categoria -->	
+			{categorias}	
+		<!-- END BLOCK : categoria -->
+		<option value="Todas">Todas</option>	
+	</select><br/>
+	<input type="submit" name="sub" value="Cadastrar" class="confirmar" />
+	<font color="#FF0000">{msg}</font>
+	<input type="hidden" name="act" value="subcategoria_cadastrar" />
+</form> 

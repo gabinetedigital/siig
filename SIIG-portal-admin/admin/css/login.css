@@ -1,0 +1,365 @@
+/* para todas as tags... serve tipo pra inicialização */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Cabin Condensed", Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	color: #000000;
+}
+
+
+#content{
+	width: 940px;
+	margin: auto;
+	/*background-color: #CC9;*/
+}
+
+
+/* ORGANIZAÇÃO DO LAYOUT */
+#all{
+	width: 100%;
+}
+
+
+
+#top{
+	height: 30px;
+	padding-top: 10px;
+	background-image: url(../img/top-bg.png);
+	background-repeat: repeat-x;
+	font-size: 10px;
+}
+
+
+
+#header{
+	height: 140px;
+	background-color: #2ab3d0;
+	background-repeat: repeat-x;
+}
+#header #logo{
+	height: 140px;
+	float: left;
+}
+#header #restrict{
+	margin-left: 380px;
+	padding-top: 50px;
+	font-size: 14px;
+	color: #FC0;
+}
+#header #restrict strong{
+	color: #FC0;
+}
+
+
+#main{
+	margin-top: 20px;
+	background-color: #FFF;
+	margin-bottom: 25px;
+}
+
+
+#externo{
+	width: 400px;
+	margin-left: 20px;
+	border: 2px solid #999;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+	#externo a{
+		color: #036;
+		text-decoration: none;
+	}
+	#externo a:hover{
+		background-color: #036;
+		color: #FFF;
+	}
+
+#interno{
+	width: 480px;
+	padding: 10px;
+	margin-left: 430px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #FC0;
+	border-radius: 7px;
+	
+}
+
+	#interno a{
+		color: #036;
+		text-decoration: none;
+	}
+	#interno a:hover{
+		background-color: #036;
+		color: #FFF;
+	}
+
+	
+	
+#footer{
+	height: 140px;
+	margin-top: 50px;
+	padding-top: 20px;
+	background-color: #2ab3d0;
+	color: #FFF;
+	bottom: 5px;
+	visibility: visible;
+}
+	#footer #coluna{
+		width: 135px;
+		padding: 5px;
+		margin: 5px;
+		color: #FFF;
+		font-size: 14px;
+		float: left;
+	}
+	#footer #coluna4{
+		width: 500px;
+		padding: 10px;
+		color: #FFF;
+		font-size: 14px;
+		float: left;
+	}
+	#footer strong{
+		font-size: 16px;
+		color: #FFF;
+	}
+	#footer a{
+		font-size: 14px;
+		color: #FFF;
+		text-decoration: none;
+	}
+	#footer a:hover{
+		text-decoration: underline;
+	}
+	#footer #separa{
+		width: 1px;
+		min-height: 350px;
+		background-image: url(../img/footer-sep.png);
+		float: left;
+	}
+	#footer #separa2{
+		width: 1px;
+		margin-top: 20px;
+		min-height: 100px;
+		background-image: url(../img/footer-sep.png);
+		float: left;
+	}
+	#footer #faixa{
+		height: 20px;
+		background-color: #036;
+	}
+	#footer .ender{
+		display: none;
+	}
+	#footer #coluna4 #texto{
+		color: #FFF;
+		font-size: 12px;
+	}
+/**********************/
+#footer-print{
+	height: 140px;
+	margin-top: 50px;
+	padding-top: 20px;
+	background-color: #EEE;
+	color: #000;
+	bottom: 5px;
+}
+/**********************/
+/**********************/
+#footer-prova{
+	height: 140px;
+	margin-top: 50px;
+	padding-top: 20px;
+	background-color: #EEE;
+	color: #000;
+	bottom: 5px;
+}
+/**********************/
+
+
+
+
+/* CLASSES PARA TAGS */
+.banner{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #CCC;
+	padding: 5px;
+}
+.clear{
+	clear: both;
+}
+.title{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.profs{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	width: 120px;
+}
+.restrictinput{
+	width: 220px;
+}
+.restrictsubmit{
+	background-color: #FFCC00;
+}
+.searchinput{
+	width: 242px;
+	color: #999;
+	float: left;
+}
+.searchsubmit{
+	background-color: #EEEEEE;
+}
+.searchimage{
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+	margin-top: -2px;
+}
+.xtraline{
+	width: 100%;
+	height: 3px;
+	border-width: 0px;
+	background-color: #009999;
+	margin-bottom: 10px;
+}
+.xtraline2{
+	width: 100%;
+	height: 3px;
+	border-width: 0px;
+	background-color: #009999;
+	display: block;
+	clear: both;
+}
+.listatb{
+	border-width: 1px;
+	border-style: solid;
+}
+.listatd{
+	height: 20px;
+	padding: 5px;
+	margin: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+.listatr{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+/* CLASSES SOLICITADAS PELA EQUIPE DE DESIGN */
+.legendaverde{
+	color: #099;
+	font-size: 10px;
+}
+.legendacinza{
+	color: #333;
+	font-size: 10px;
+}
+.destaqueazul{
+	color: #036;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 12px;
+	background-image: url(../img/title-seta.png);
+	background-repeat: no-repeat;
+}
+.textoverde{
+	color: #099;
+	font-size: 16px;
+}
+.textoazul{
+	color: #036;
+	font-size: 16px;
+}
+
+
+
+/* OUTRAS TAGS DO HTML */
+html{
+	overflow: -moz-scrollbars-vertical; 
+	overflow-y: scroll;
+}
+body{
+	background-color: #FFFFFF;
+}
+
+h1{
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	color: #036;
+}
+h1.restrict{
+	font-size: 16px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #FFCC00;
+}
+
+h2{
+	font-size: 16px;
+	font-weight: 700;
+	padding-left: 12px;
+	margin-bottom: 10px;
+	color: #036;
+	background-image: url(../img/title-seta.png);
+	background-repeat: no-repeat;
+}
+
+h3{
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 2px;
+	color: #099;
+}
+
+p{
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+input, select, textarea{
+	padding: 4px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #999;
+}
+
+#page ol{ 
+	margin-left: 20px;
+}
+#page ul{ 
+	margin-left: 20px;
+}
+#page li{ 
+	margin-left: 20px;
+}
+
+/* classes SIIG Roberto */
+
+.entrar{
+	padding: 10px 35px;
+	background: #3AC1EA;
+	font-size: 20px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+.inputLogin{
+	font-family: "Cabin Condensed", sans-serif;
+	font-size: 18px;
+	width: 380px;
+	padding: 8px;
+	margin: 5px 0 20px 0;
+	resize: none;		
+}

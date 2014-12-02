@@ -1,0 +1,11 @@
+<h1>Estados | Cadastrar</h1><br/>
+<!--<a href="produtos_cadastrar.php" class="cadastrar" style="float: right;">+ Cadatrar Estado</a>-->
+<form action="estados-exec.php" method="post" onsubmit="return true;">
+	<span class="textoazul">Nome</span><br />
+	<input type="text" name="nome" class="inputCadastrar"/>
+	<span class="textoazul">Sigla</span><br />
+	<input type="text" name="sigla" class="inputCadastrar" maxlength="2"/>
+	<input type="submit" name="sub" value="Cadastrar" class="confirmar" />
+	<font color="#FF0000">{msg}</font>
+	<input type="hidden" name="act" value="estado_cadastrar" />
+</form> 
